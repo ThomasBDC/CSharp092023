@@ -7,6 +7,19 @@ List<string> listAnimals = new()
     "Quoi de neuf"
 };
 
+Humain monHumain = new Humain("BDC", "Thomas", new DateTime(1972,12,31), "Blond");
+
+Console.WriteLine(monHumain.GetAge());
+
+if (monHumain.canHavePermis(53))
+{
+    Console.WriteLine("Vous pouvez passer le permis");
+}
+else
+{
+    Console.WriteLine("Impossible de passer le permis, soyez patients.");
+}
+
 SayHelloToUser();
 
 //Début du jeu
@@ -15,7 +28,6 @@ do
     DoTourDeJeu();
 
 } while (GetReponsePlayAgain());
-
 
 
 #region Methods
