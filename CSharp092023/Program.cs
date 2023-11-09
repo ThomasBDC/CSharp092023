@@ -1,4 +1,5 @@
 ﻿using CSharp092023;
+using System.Reflection;
 
 List<string> listAnimals = new()
 {
@@ -80,3 +81,28 @@ bool GetReponsePlayAgain()
     }
 }
 #endregion
+
+
+
+
+
+
+
+
+
+Voiture maVoiture = new()
+{
+    Immatriculation = "EX-609-GM",
+    Marque = "Renault",
+    Modele = "Clio",
+    Couleur = "Rouge",
+    NbChevaux = 75,
+};
+
+var Mavoiture2 = maVoiture;
+
+Mavoiture2.Immatriculation = "coucou";
+
+Console.WriteLine(maVoiture.Immatriculation);
+
+
